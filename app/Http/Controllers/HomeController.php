@@ -9,6 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+        $foods = Food::all();
         // Ambil semua kategori unik dari tabel 'foods'
         $categories = Food::select('category')->distinct()->pluck('category');
 

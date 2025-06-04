@@ -12,7 +12,7 @@ class FoodSeeder extends Seeder
         Food::create([
             'name' => 'Nasi Goreng Spesial',
             'description' => 'Nasi goreng dengan telur, ayam, dan kerupuk.',
-            'image' => 'nasi_goreng.png',
+            'image' => 'nasgor.jpg',
             'category' => 'Nasi'
         ]);
         Food::create([
@@ -24,7 +24,13 @@ class FoodSeeder extends Seeder
         Food::create([
             'name' => 'Mie Goreng',
             'description' => 'Mie goreng pedas dengan sayuran segar.',
-            'image' => 'miegoreng.jpg',
+            'image' => 'miegor.jpg',
+            'category' => 'Mie'
+        ]);
+        Food::create([
+            'name' => 'Mie Ayam Bakso',
+            'description' => 'Mie ayam lengkap dengan bakso dan pangsit.',
+            'image' => 'mieayam.jpg',
             'category' => 'Mie'
         ]);
     }

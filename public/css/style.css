@@ -1,0 +1,374 @@
+/* Reset dan Gaya Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background-color: #007bff;
+    padding: 15px 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #e0f0ff;
+}
+
+/* Judul */
+h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+    color: #0056b3;
+}
+
+/* Section Title */
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    font-size: 24px;
+    text-align: center;
+    color: #007bff;
+}
+
+/* Kategori */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 0 30px 50px;
+}
+.category {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.order-btn {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-btn:hover {
+    background-color: #e0a800;
+}
+
+.read-more-toggle {
+    background-color: #00b14f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 6px;
+}
+
+.read-more-toggle:hover {
+    background-color: #008f3d;
+}
+.order-btn {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-btn:hover {
+    background-color: #e0a800;
+}
+
+.read-more-toggle {
+    background-color: #00b14f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 6px;
+}
+
+.read-more-toggle:hover {
+    background-color: #008f3d;
+}
+
+/* banner */
+.banner-section {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.promo-banner {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 120px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 8px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.promo-banner img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 4px;
+}
+
+.promo-banner span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+.promo-banner:hover {
+    transform: translateY(-4px);
+}
+
+
+/* Menu Item */
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 30px 60px;
+}
+.food-item {
+    background: #fff;
+    border-radius: 15px;
+    width: 240px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.food-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.food-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.food-name {
+    font-weight: 700;
+    font-size: 18px;
+    color: #007bff;
+    padding: 10px 15px 0;
+}
+.food-desc {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 15px 10px;
+}
+.sold-count {
+    font-size: 13px;
+    color: #777;
+    padding: 0 15px 15px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .category-list,
+    .food-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .food-item, .category {
+        width: 90%;
+    }
+}
+
+/* description menu */
+.food-desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.desc-text {
+    margin: 0 0 6px;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+.read-more-toggle {
+    background-color: #00b14f;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.read-more-toggle:hover {
+    background-color: #008f3d;
+}
+.order-btn {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-btn:hover {
+    background-color: #e0a800;
+}
+
+/* home */
+.discount-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #ff3d00;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+.food-price {
+    margin-top: 8px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 8px;
+}
+
+.discounted-price {
+    font-weight: bold;
+    color: #e53935;
+}
+
+.banner-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    height: 300px; /* tinggi banner, bisa kamu sesuaikan */
+}
+
+.banner-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.banner-slide.active {
+    display: block;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 2rem;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.promo-banner {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.promo-banner.active {
+    display: flex;
+}
